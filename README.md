@@ -5,7 +5,7 @@ A desktop app (Python + PyQt6) that turns a YouTube video, or a whole playlist, 
 Useful for lecture notes, tutorials, slide-based talks and any video you want to study offline.
 
 ---
-
+[Download The Windows Executable File](https://drive.google.com/file/d/1TzSkkqKUNbieFsOz-kFNhAqfUYZMBhR-/view?usp=sharing)
 ## Features
 
 - **Paste any YouTube link**: normal, `youtu.be`, Shorts, mobile, links with `&t=` or `&list=` extras, or a bare video ID.
