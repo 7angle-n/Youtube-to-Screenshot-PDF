@@ -1,5 +1,3 @@
-# Youtube-to-Screenshot-PDF
-
 # YouTube → Screenshot PDF Studio
 
 A desktop app (Python + PyQt6) that turns a YouTube video, or a whole playlist, into a clean PDF of **de-duplicated screenshots**, each followed by a **readable transcript paragraph** (no timestamps).
