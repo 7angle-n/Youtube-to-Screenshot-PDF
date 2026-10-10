@@ -6,6 +6,7 @@ Useful for lecture notes, tutorials, slide-based talks and any video you want to
 
 ---
 [Download The Windows Executable File](https://drive.google.com/file/d/1TzSkkqKUNbieFsOz-kFNhAqfUYZMBhR-/view?usp=sharing)
+[Download link for 2.0](https://drive.google.com/file/d/1h7_w2sKWoju77UFfVR_5u029M1LqxCYN/view?usp=sharing)
 ## Features
 
 - **Paste any YouTube link**: normal, `youtu.be`, Shorts, mobile, links with `&t=` or `&list=` extras, or a bare video ID.
@@ -88,33 +89,45 @@ python3 yt_screenshot_pdf.py     # macOS / Linux
 ---
 
 ## Quick start: single video
-
+ 
 1. Paste a YouTube link and click **Fetch info**. The title, thumbnail and transcript availability appear.
 2. Adjust the settings if you like (the defaults work well for slide-style videos).
 3. Click **1. Capture screenshots**. The video is downloaded and scanned, and screenshots appear in the grid.
 4. Review them: untick the ones you don't want, click one to preview it with its transcript.
 5. Choose the transcript options and output file, then click **2. Export PDF**.
-
 You can also skip Fetch info. Clicking **Capture screenshots** fetches the info first automatically.
-
-## Playlists
-
-1. Paste a playlist link (`youtube.com/playlist?list=...`). **Entire playlist** is ticked for you. For a `watch?v=...&list=...` link, tick it yourself.
+ 
+## Batch mode: playlists and multiple local videos
+ 
+Batch mode processes several videos in one run — either a YouTube playlist or a folder of files already on your PC — and produces one PDF per video or a single combined PDF.
+ 
+### YouTube playlist
+ 
+1. Paste a playlist link (`youtube.com/playlist?list=...`). **Batch mode** is ticked for you. For a `watch?v=...&list=...` link, tick it yourself.
 2. Click **Fetch info**. The **Playlist** tab lists every video, all ticked. Untick any you don't want.
 3. Under **PDF → Playlist output**, choose:
    - **One PDF per video**: a folder of files named `01 - Title.pdf`, `02 - Title.pdf`, and so on.
    - **One combined PDF**: one section per video, each starting on a new page.
 4. Click **Process whole playlist → PDF(s)**.
-
 Notes:
-
+ 
 - Videos that fail (private, deleted, region-blocked) are skipped and listed in a summary at the end. The rest continue.
 - A video without an English transcript gets screenshots only.
-- The start/end time fields are disabled in playlist mode.
+- The start/end time fields are disabled in batch mode.
 - A combined PDF keeps every screenshot in memory. For very large playlists, use one PDF per video.
-
+### Multiple local (already-downloaded) videos
+ 
+1. Click **Open multiple local videos...** and select several video files at once (this also switches on **Batch mode** for you).
+2. The files appear in the **Playlist** tab, just like a YouTube playlist — untick any you don't want.
+3. Choose **One PDF per video** or **One combined PDF**, then click **Process whole playlist → PDF(s)**.
+Notes:
+ 
+- No downloading or internet connection needed — files are read straight from disk.
+- A `.srt` or `.vtt` file with the same name next to a video (e.g. `lecture.mp4` + `lecture.en.srt`) is used as its transcript automatically. No matching subtitle file → screenshots only for that video.
+- If every file is in the same folder, the output is named after that folder; otherwise it's named "N local videos".
+- A file that fails to open (corrupt/unsupported codec) is skipped and listed in the end-of-run summary.
 ---
-
+Note: No console appears for the 2.0 version as well
 ## Settings reference
 
 ### Screenshot capture
